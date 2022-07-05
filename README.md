@@ -29,16 +29,26 @@ to check the git staus
 git status
 
 to chech all version maintained by git 
+```
 git log
+```
 
 to create version /commit all changes by git
+```
 git commit -m "message"
+```
 
 to send version/changes to github
+```
 git push origin main
+```
 
 to get the origin 
+```
 git remote -v
+```
 
 to check branch
+```
 git branch
+```
