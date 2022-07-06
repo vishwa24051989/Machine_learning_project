@@ -1,4 +1,7 @@
 Flask
 gunicorn
+<<<<<<< HEAD
 sklearn
 pandas
+=======
+>>>>>>> c7e6a5bd55f52c9f0c4a2e4bbd3c758947180bc9
