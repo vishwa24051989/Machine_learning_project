@@ -1,2 +1,4 @@
 Flask
-ginicorn
+gunicorn
+sklearn
+pandas
