@@ -1,54 +1,118 @@
-# Machine_learning_project
-This is first Project on machine learning
-1. [github](https://learn.ineuron.ai/lesson/12th-June-Live-Class-machine-learning-project/62a70313696079d1f43bb539/course/Full-Stack-Data-Science-Nov'21-Batch/61b30b40b733d139bc0e7ffb/batch/61b30b40b733d139bc0e6ffe#)
+Application url:
+[HousingPredictor](https://ml-regression-app.herokuapp.com/)
 
-creating conda environment
+## Start Machine Learning project.
+
+### Software and account Requirement.
+
+1. [Github Account](https://github.com)
+2. [Heroku Account](https://dashboard.heroku.com/login)
+3. [VS Code IDE](https://code.visualstudio.com/download)
+4. [GIT cli](https://git-scm.com/downloads)
+5. [GIT Documentation](https://git-scm.com/docs/gittutorial)
+
+
+Creating conda environment
 ```
 conda create -p venv python==3.7 -y
-
 ```
 ```
 conda activate venv/
 ```
+OR 
 ```
-conda init cmd.exe
+conda activate venv
 ```
+
 ```
 pip install -r requirements.txt
 ```
-```
-python app.py
-```
-to add files to git
-git add . 
-git add <file name>
 
-to ignore file or folder we can use .gitignore file.
+To Add files to git
+```
+git add .
+```
 
-to check the git staus
+OR
+```
+git add <file_name>
+```
+
+> Note: To ignore file or folder from git we can write name of file/folder in .gitignore file
+
+To check the git status 
+```
 git status
-
-to chech all version maintained by git 
+```
+To check all version maintained by git
 ```
 git log
 ```
 
-to create version /commit all changes by git
+To create version/commit all changes by git
 ```
 git commit -m "message"
 ```
 
-to send version/changes to github
+To send version/changes to github
 ```
 git push origin main
 ```
 
-to get the origin 
+To check remote url 
 ```
 git remote -v
 ```
 
-to check branch
+To setup CI/CD pipeline in heroku we need 3 information
+1. HEROKU_EMAIL = anishyadav7045075175@gmail.com
+2. HEROKU_API_KEY = <>
+3. HEROKU_APP_NAME = ml-regression-app
+
+BUILD DOCKER IMAGE
 ```
-git branch
+docker build -t <image_name>:<tagname> .
 ```
+> Note: Image name for docker must be lowercase
+
+
+To list docker image
+```
+docker images
+```
+
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 f8c749e73678
+```
+
+To check running container in docker
+```
+docker ps
+```
+
+Tos stop docker conatiner
+```
+docker stop <container_id>
+```
+
+
+
+```
+python setup.py install
+```
+
+
+Install ipykernel
+
+```
+pip install ipykernel
+```
+
+
+Data Drift:
+When your datset stats gets change we call it as data drift
+
+
+
+## Write a function to get training file path from artifact dir
